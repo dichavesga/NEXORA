@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.mspMenuPrincipal = new System.Windows.Forms.MenuStrip();
-            this.sttBarraInferior = new System.Windows.Forms.StatusStrip();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sttBarraInferior = new System.Windows.Forms.StatusStrip();
             this.mspMenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // mspMenuPrincipal
             // 
+            this.mspMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
             this.mspMenuPrincipal.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mspMenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenimientosToolStripMenuItem,
@@ -51,26 +52,9 @@
             this.acercaDeToolStripMenuItem});
             this.mspMenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mspMenuPrincipal.Name = "mspMenuPrincipal";
-            this.mspMenuPrincipal.Size = new System.Drawing.Size(934, 72);
+            this.mspMenuPrincipal.Size = new System.Drawing.Size(200, 450);
             this.mspMenuPrincipal.TabIndex = 0;
             this.mspMenuPrincipal.Text = "menuStrip1";
-            // 
-            // sttBarraInferior
-            // 
-            this.sttBarraInferior.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.sttBarraInferior.Location = new System.Drawing.Point(0, 428);
-            this.sttBarraInferior.Name = "sttBarraInferior";
-            this.sttBarraInferior.Size = new System.Drawing.Size(934, 22);
-            this.sttBarraInferior.TabIndex = 1;
-            this.sttBarraInferior.Text = "statusStrip1";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_info_50;
-            this.acercaDeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(137, 68);
-            this.acercaDeToolStripMenuItem.Text = "AcercaDe";
             // 
             // mantenimientosToolStripMenuItem
             // 
@@ -80,7 +64,7 @@
             this.mantenimientosToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_tools_64;
             this.mantenimientosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(194, 68);
+            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(187, 68);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
             // 
             // clientesToolStripMenuItem
@@ -100,7 +84,7 @@
             this.procesosToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_process_64;
             this.procesosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(145, 68);
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(187, 68);
             this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // reportesToolStripMenuItem
@@ -108,7 +92,7 @@
             this.reportesToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_report_64;
             this.reportesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(146, 68);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(187, 68);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // administracionToolStripMenuItem
@@ -119,10 +103,29 @@
             this.administracionToolStripMenuItem.Size = new System.Drawing.Size(187, 68);
             this.administracionToolStripMenuItem.Text = "Administracion";
             // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_info_50;
+            this.acercaDeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(187, 54);
+            this.acercaDeToolStripMenuItem.Text = "AcercaDe";
+            // 
+            // sttBarraInferior
+            // 
+            this.sttBarraInferior.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.sttBarraInferior.Location = new System.Drawing.Point(200, 428);
+            this.sttBarraInferior.Name = "sttBarraInferior";
+            this.sttBarraInferior.Size = new System.Drawing.Size(734, 22);
+            this.sttBarraInferior.TabIndex = 1;
+            this.sttBarraInferior.Text = "statusStrip1";
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Nexora.Properties.Resources.backgroundlowericon;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(934, 450);
             this.Controls.Add(this.sttBarraInferior);
             this.Controls.Add(this.mspMenuPrincipal);

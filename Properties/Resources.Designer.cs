@@ -63,6 +63,16 @@ namespace Nexora.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundlowericon {
+            get {
+                object obj = ResourceManager.GetObject("backgroundlowericon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_add_file_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-add-file-50", resourceCulture);
@@ -436,6 +446,16 @@ namespace Nexora.Properties {
         internal static System.Drawing.Bitmap icons8_trash_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-trash-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nexoraBackground {
+            get {
+                object obj = ResourceManager.GetObject("nexoraBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
