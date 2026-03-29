@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Capas\Class1.cs" />
     <Compile Include="Capas\persistencia\DataBase.cs" />
     <Compile Include="Capas\persistencia\FactoryConexion.cs" />
     <Compile Include="Capas\persistencia\FactoryDataBase.cs" />
