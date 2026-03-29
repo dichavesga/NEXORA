@@ -71,17 +71,14 @@
     <Compile Include="Capas\persistencia\FactoryDataBase.cs" />
     <Compile Include="Capas\persistencia\IDataBase.cs" />
     <Compile Include="Capas\servicio\ServiceDolar.cs" />
-    <Compile Include="Capas\servicio\ServicePais.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilitarios\Cryptography.cs" />
     <Compile Include="Utilitarios\EnviarCorreo.cs" />
-    <Compile Include="Utilitarios\ExportarGrid.cs" />
     <Compile Include="Utilitarios\FormatStrings.cs" />
     <Compile Include="Utilitarios\LeerDatos.cs" />
     <Compile Include="Utilitarios\MonedaEnLetras.cs" />
     <Compile Include="Utilitarios\MonedaEnLetrasEN.cs" />
-    <Compile Include="Utilitarios\Utiles.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
