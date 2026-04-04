@@ -42,7 +42,7 @@
             // 
             // mspMenuPrincipal
             // 
-            this.mspMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mspMenuPrincipal.Dock = System.Windows.Forms.DockStyle.Top;
             this.mspMenuPrincipal.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mspMenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenimientosToolStripMenuItem,
@@ -52,7 +52,7 @@
             this.acercaDeToolStripMenuItem});
             this.mspMenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mspMenuPrincipal.Name = "mspMenuPrincipal";
-            this.mspMenuPrincipal.Size = new System.Drawing.Size(200, 450);
+            this.mspMenuPrincipal.Size = new System.Drawing.Size(934, 68);
             this.mspMenuPrincipal.TabIndex = 0;
             this.mspMenuPrincipal.Text = "menuStrip1";
             // 
