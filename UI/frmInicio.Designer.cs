@@ -1,6 +1,6 @@
 ﻿namespace Nexora.UI
 {
-    partial class frmPrincipal
+    partial class frmInicio
     {
         /// <summary>
         /// Required designer variable.

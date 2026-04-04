@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nexora.UI
 {
-    public partial class frmPrincipal : Form
+    public partial class frmInicio : Form
     {
-        public frmPrincipal()
+        public frmInicio()
         {
             InitializeComponent();
         }
