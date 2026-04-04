@@ -16,5 +16,29 @@ namespace Nexora.UI
         {
             InitializeComponent();
         }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+            VerificarConexion();
+        }
+
+        private void VerificarConexion()
+        {
+            try
+            {
+                using (IDataBase db = FactoryDatabase.CreateDataBase(FactoryConexion.CreateConnection()))
+                {
+                    toolStripStatusLabel1.Text = "🟢 Conectado";
+                    toolStripStatusLabel1.ForeColor = Color.Green;
+                }
+            }
+            catch (Exception ex)
+            {
+                toolStripStatusLabel1.Text = "🔴 Sin conexión";
+                toolStripStatusLabel1.ForeColor = Color.Red;
+
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }
