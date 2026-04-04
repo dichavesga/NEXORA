@@ -67,8 +67,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Capas\Class1.cs" />
-    <Compile Include="Capas\Class2.cs" />
     <Compile Include="Capas\Entities\Banco.cs" />
     <Compile Include="Capas\Entities\Catalogos\Marca.cs" />
     <Compile Include="Capas\Entities\Catalogos\MetodoPago.cs" />
