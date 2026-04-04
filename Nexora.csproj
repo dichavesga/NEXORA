@@ -68,6 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Capas\Class1.cs" />
+    <Compile Include="Capas\Class2.cs" />
+    <Compile Include="Capas\Entities\Banco.cs" />
+    <Compile Include="Capas\Entities\Catalogos\Marca.cs" />
+    <Compile Include="Capas\Entities\Catalogos\MetodoPago.cs" />
+    <Compile Include="Capas\Entities\Catalogos\Perfil.cs" />
+    <Compile Include="Capas\Entities\Catalogos\Provincia.cs" />
+    <Compile Include="Capas\Entities\Catalogos\TipoDispositivo.cs" />
+    <Compile Include="Capas\Entities\Cliente.cs" />
+    <Compile Include="Capas\Entities\DetalleFactura.cs" />
+    <Compile Include="Capas\Entities\Factura.cs" />
+    <Compile Include="Capas\Entities\Producto.cs" />
+    <Compile Include="Capas\Entities\Usuario.cs" />
     <Compile Include="Capas\servicio\ServiceDolar.cs" />
     <Compile Include="Persistencia\DataBase.cs" />
     <Compile Include="Persistencia\FactoryConexion.cs" />
@@ -117,7 +129,6 @@
   <ItemGroup>
     <Folder Include="Capas\BLL\" />
     <Folder Include="Capas\DAL\" />
-    <Folder Include="Capas\Entidades\" />
     <Folder Include="Enumeraciones\" />
     <Folder Include="Interfaces\" />
     <Folder Include="UI\Mantenimientos\" />
