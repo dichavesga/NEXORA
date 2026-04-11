@@ -1,4 +1,6 @@
-﻿using Nexora.Capas.Entities.Catalogos;
+﻿using log4net;
+using Nexora.Capas.Entities.Catalogos;
+using Nexora.Extensiones;
 using Nexora.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -13,7 +15,7 @@ namespace Nexora.Capas.DAL
 {
     public class DALProvincia : IDALProvincia
     {
-        //private static readonly ILog _myLogControlEventos = LogManager.GetLogger("MyControlEventos");
+        private static readonly ILog _myLogControlEventos = LogManager.GetLogger("MyControlEventos");
         public bool Delete(int pId)
         {
             throw new Exception("Ud debe desarrollarlo!");

@@ -58,8 +58,13 @@
             this.cmbProvincia = new System.Windows.Forms.ComboBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -67,9 +72,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 550);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 592);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(965, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1028, 26);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -89,7 +94,7 @@
             this.btnSalir});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(965, 57);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 57);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -133,7 +138,7 @@
             // 
             this.lblIdentificacion.AutoSize = true;
             this.lblIdentificacion.BackColor = System.Drawing.Color.Transparent;
-            this.lblIdentificacion.Location = new System.Drawing.Point(13, 108);
+            this.lblIdentificacion.Location = new System.Drawing.Point(13, 115);
             this.lblIdentificacion.Name = "lblIdentificacion";
             this.lblIdentificacion.Size = new System.Drawing.Size(85, 16);
             this.lblIdentificacion.TabIndex = 3;
@@ -162,7 +167,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(13, 138);
+            this.label3.Location = new System.Drawing.Point(13, 158);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 6;
@@ -172,7 +177,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(13, 175);
+            this.label4.Location = new System.Drawing.Point(13, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 7;
@@ -182,7 +187,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(13, 209);
+            this.label5.Location = new System.Drawing.Point(14, 243);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 16);
             this.label5.TabIndex = 8;
@@ -192,7 +197,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(13, 241);
+            this.label6.Location = new System.Drawing.Point(13, 297);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 16);
             this.label6.TabIndex = 9;
@@ -202,7 +207,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(13, 274);
+            this.label7.Location = new System.Drawing.Point(13, 353);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 16);
             this.label7.TabIndex = 10;
@@ -222,7 +227,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(13, 313);
+            this.label9.Location = new System.Drawing.Point(14, 416);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 16);
             this.label9.TabIndex = 12;
@@ -232,7 +237,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(13, 348);
+            this.label10.Location = new System.Drawing.Point(13, 467);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 16);
             this.label10.TabIndex = 13;
@@ -242,7 +247,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(13, 382);
+            this.label11.Location = new System.Drawing.Point(13, 547);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(113, 16);
             this.label11.TabIndex = 14;
@@ -251,35 +256,35 @@
             // cmbTipoIdentificacion
             // 
             this.cmbTipoIdentificacion.FormattingEnabled = true;
-            this.cmbTipoIdentificacion.Location = new System.Drawing.Point(166, 78);
+            this.cmbTipoIdentificacion.Location = new System.Drawing.Point(166, 70);
             this.cmbTipoIdentificacion.Name = "cmbTipoIdentificacion";
             this.cmbTipoIdentificacion.Size = new System.Drawing.Size(143, 24);
             this.cmbTipoIdentificacion.TabIndex = 15;
             // 
             // txtIdentificacion
             // 
-            this.txtIdentificacion.Location = new System.Drawing.Point(166, 109);
+            this.txtIdentificacion.Location = new System.Drawing.Point(166, 115);
             this.txtIdentificacion.Name = "txtIdentificacion";
             this.txtIdentificacion.Size = new System.Drawing.Size(143, 22);
             this.txtIdentificacion.TabIndex = 16;
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(166, 137);
+            this.TxtNombre.Location = new System.Drawing.Point(166, 155);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(143, 22);
             this.TxtNombre.TabIndex = 17;
             // 
             // txtApellido1
             // 
-            this.txtApellido1.Location = new System.Drawing.Point(166, 175);
+            this.txtApellido1.Location = new System.Drawing.Point(166, 196);
             this.txtApellido1.Name = "txtApellido1";
             this.txtApellido1.Size = new System.Drawing.Size(143, 22);
             this.txtApellido1.TabIndex = 18;
             // 
             // txtApellido2
             // 
-            this.txtApellido2.Location = new System.Drawing.Point(166, 209);
+            this.txtApellido2.Location = new System.Drawing.Point(166, 237);
             this.txtApellido2.Name = "txtApellido2";
             this.txtApellido2.Size = new System.Drawing.Size(143, 22);
             this.txtApellido2.TabIndex = 19;
@@ -287,28 +292,30 @@
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
-            this.rbFemenino.Location = new System.Drawing.Point(166, 241);
+            this.rbFemenino.BackColor = System.Drawing.Color.Transparent;
+            this.rbFemenino.Location = new System.Drawing.Point(166, 293);
             this.rbFemenino.Name = "rbFemenino";
             this.rbFemenino.Size = new System.Drawing.Size(88, 20);
             this.rbFemenino.TabIndex = 20;
             this.rbFemenino.TabStop = true;
             this.rbFemenino.Text = "Femenino";
-            this.rbFemenino.UseVisualStyleBackColor = true;
+            this.rbFemenino.UseVisualStyleBackColor = false;
             // 
             // rbMasculino
             // 
             this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(296, 241);
+            this.rbMasculino.BackColor = System.Drawing.Color.Transparent;
+            this.rbMasculino.Location = new System.Drawing.Point(296, 293);
             this.rbMasculino.Name = "rbMasculino";
             this.rbMasculino.Size = new System.Drawing.Size(89, 20);
             this.rbMasculino.TabIndex = 21;
             this.rbMasculino.TabStop = true;
             this.rbMasculino.Text = "Masculino";
-            this.rbMasculino.UseVisualStyleBackColor = true;
+            this.rbMasculino.UseVisualStyleBackColor = false;
             // 
             // mskTelefono
             // 
-            this.mskTelefono.Location = new System.Drawing.Point(166, 268);
+            this.mskTelefono.Location = new System.Drawing.Point(166, 347);
             this.mskTelefono.Mask = "(999) 000-0000";
             this.mskTelefono.Name = "mskTelefono";
             this.mskTelefono.Size = new System.Drawing.Size(143, 22);
@@ -317,25 +324,56 @@
             // cmbProvincia
             // 
             this.cmbProvincia.FormattingEnabled = true;
-            this.cmbProvincia.Location = new System.Drawing.Point(166, 304);
+            this.cmbProvincia.Location = new System.Drawing.Point(166, 408);
             this.cmbProvincia.Name = "cmbProvincia";
             this.cmbProvincia.Size = new System.Drawing.Size(143, 24);
             this.cmbProvincia.TabIndex = 23;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(166, 348);
+            this.txtDireccion.Location = new System.Drawing.Point(166, 464);
+            this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(233, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(233, 59);
             this.txtDireccion.TabIndex = 24;
             // 
             // cmbEstado
             // 
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(166, 382);
+            this.cmbEstado.Location = new System.Drawing.Point(166, 539);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(143, 24);
             this.cmbEstado.TabIndex = 25;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Nexora.Properties.Resources.camera_identification_128;
+            this.pictureBox1.Location = new System.Drawing.Point(444, 428);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Location = new System.Drawing.Point(441, 390);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 16);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Foto";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(444, 78);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(531, 291);
+            this.dataGridView1.TabIndex = 29;
             // 
             // frmCliente
             // 
@@ -343,7 +381,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Nexora.Properties.Resources.backgroundlowericon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(965, 576);
+            this.ClientSize = new System.Drawing.Size(1028, 618);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbEstado);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.cmbProvincia);
@@ -376,6 +417,8 @@
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,5 +456,8 @@
         private System.Windows.Forms.ComboBox cmbProvincia;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

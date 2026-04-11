@@ -40,5 +40,21 @@ namespace Nexora.UI
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCliente frmClientes;
+            try
+            {
+                frmClientes = new frmCliente();
+                frmClientes.Show();
+            }
+            catch (Exception er)
+            {
+                StringBuilder msg = new StringBuilder();
+                MessageBox.Show("Se ha producido el siguiente error: " + er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
     }
 }

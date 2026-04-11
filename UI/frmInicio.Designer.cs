@@ -73,15 +73,16 @@
             this.clientesToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_profile_50;
             this.clientesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(188, 56);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_computer_48;
             this.productosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(188, 56);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.productosToolStripMenuItem.Text = "Productos";
             // 
             // procesosToolStripMenuItem
