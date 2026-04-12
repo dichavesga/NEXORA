@@ -28,6 +28,7 @@ namespace Nexora.UI
         private async void LoadData()
         {
             //IBLLCliente bllCliente = new BLLCliente();
+            //Combo Provincias desde el JSON
             IBLLProvincia bllProvincia = new BLLProvincia();
             List<Provincia> lista = null;
 
@@ -37,6 +38,17 @@ namespace Nexora.UI
             this.cmbProvincia.DataSource = lista;
             cmbProvincia.DisplayMember = "Descripcion";
             this.cmbProvincia.SelectedIndex = 0;
+
+            //Combo TipoIdentificacion desde enum
+            cmbTipoIdentificacion.Items.Clear();
+            // Cargar los valores del Enum
+            foreach (TipoIdentificacion tipo in Enum.GetValues(typeof(TipoIdentificacion)))
+            {
+                cmbTipoIdentificacion.Items.Add(tipo);
+            }
+            cmbTipoIdentificacion.SelectedIndex = 0;
+
+
         }
 
         

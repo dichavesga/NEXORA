@@ -102,7 +102,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Capas\BLL\BLLCliente.cs" />
     <Compile Include="Capas\BLL\BLLProvincia.cs" />
+    <Compile Include="Capas\DAL\DALCliente.cs" />
     <Compile Include="Capas\DAL\DALProvincia.cs" />
     <Compile Include="Capas\Entities\Banco.cs" />
     <Compile Include="Capas\Entities\Catalogos\Marca.cs" />
@@ -113,11 +115,15 @@
     <Compile Include="Capas\Entities\Cliente.cs" />
     <Compile Include="Capas\Entities\DetalleFactura.cs" />
     <Compile Include="Capas\Entities\Factura.cs" />
+    <Compile Include="Capas\Entities\HaciendaResponse.cs" />
     <Compile Include="Capas\Entities\Producto.cs" />
     <Compile Include="Capas\Entities\Usuario.cs" />
     <Compile Include="Capas\servicio\ServiceDolar.cs" />
+    <Compile Include="Enums\TipoIdentificacion.cs" />
     <Compile Include="Extensiones\ExceptionsExtention.cs" />
+    <Compile Include="Interfaces\IBLLCliente.cs" />
     <Compile Include="Interfaces\IBLLProvincia.cs" />
+    <Compile Include="Interfaces\IDALCliente.cs" />
     <Compile Include="Interfaces\IDALProvincia.cs" />
     <Compile Include="Persistencia\DataBase.cs" />
     <Compile Include="Persistencia\FactoryConexion.cs" />
@@ -175,7 +181,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Enumeraciones\" />
     <Folder Include="UI\Procesos\" />
     <Folder Include="UI\Reportes\" />
     <Folder Include="UI\Seguridad\" />
