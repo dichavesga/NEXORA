@@ -163,6 +163,26 @@ namespace Nexora.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_brand_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-brand-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_brand_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-brand-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_business_report_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-business-report-50", resourceCulture);
@@ -246,6 +266,16 @@ namespace Nexora.Properties {
         internal static System.Drawing.Bitmap icons8_denied_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-denied-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_devices_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-devices-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Nexora.UI.Mantenimientos
 {
-    public partial class frmProducto : Form
+    public partial class frmMarca : Form
     {
-        public frmProducto()
+        public frmMarca()
         {
             InitializeComponent();
         }
 
-        private void frmProducto_Load(object sender, EventArgs e)
+        private void frmMarca_Load(object sender, EventArgs e)
         {
             VerificarConexion();
         }
@@ -40,6 +40,5 @@ namespace Nexora.UI.Mantenimientos
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
     }
 }
