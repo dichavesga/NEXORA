@@ -347,6 +347,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Nexora.Properties.Resources.camera_identification_128;
             this.pictureBox1.Location = new System.Drawing.Point(444, 428);
             this.pictureBox1.Name = "pictureBox1";

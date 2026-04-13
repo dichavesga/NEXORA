@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nexora.UI.Mantenimientos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,6 +49,22 @@ namespace Nexora.UI
             {
                 frmClientes = new frmCliente();
                 frmClientes.Show();
+            }
+            catch (Exception er)
+            {
+                StringBuilder msg = new StringBuilder();
+                MessageBox.Show("Se ha producido el siguiente error: " + er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProducto frmProducto;
+            try
+            {
+                frmProducto = new frmProducto();
+                frmProducto.Show();
             }
             catch (Exception er)
             {

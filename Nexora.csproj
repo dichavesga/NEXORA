@@ -143,6 +143,12 @@
     <Compile Include="UI\frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Mantenimientos\frmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Mantenimientos\frmProducto.Designer.cs">
+      <DependentUpon>frmProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilitarios\Cryptography.cs" />
     <Compile Include="Utilitarios\CustomException.cs" />
     <Compile Include="Utilitarios\EnviarCorreo.cs" />
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Mantenimientos\frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Mantenimientos\frmProducto.resx">
+      <DependentUpon>frmProducto.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
