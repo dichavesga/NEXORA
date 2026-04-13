@@ -90,9 +90,20 @@ namespace Nexora.UI
             }
         }
 
-        private void mantenimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tipoDispositivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmTipoDispositivo frmTipoDispositivo;
+            try
+            {
+                frmTipoDispositivo = new frmTipoDispositivo();
+                frmTipoDispositivo.Show();
+            }
+            catch (Exception er)
+            {
+                StringBuilder msg = new StringBuilder();
+                MessageBox.Show("Se ha producido el siguiente error: " + er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
         }
     }
 }

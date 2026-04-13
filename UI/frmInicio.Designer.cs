@@ -71,7 +71,6 @@
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(194, 68);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
-            this.mantenimientosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientosToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -107,6 +106,7 @@
             this.tipoDispositivoToolStripMenuItem.Name = "tipoDispositivoToolStripMenuItem";
             this.tipoDispositivoToolStripMenuItem.Size = new System.Drawing.Size(254, 56);
             this.tipoDispositivoToolStripMenuItem.Text = "Tipo Dispositivo";
+            this.tipoDispositivoToolStripMenuItem.Click += new System.EventHandler(this.tipoDispositivoToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
