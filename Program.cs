@@ -17,7 +17,7 @@ namespace Nexora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin()); //frmInicio());
+            Application.Run(new frmInicio());
 
         }
     }
