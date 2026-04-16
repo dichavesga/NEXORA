@@ -104,8 +104,10 @@
   <ItemGroup>
     <Compile Include="Capas\BLL\BLLCliente.cs" />
     <Compile Include="Capas\BLL\BLLProvincia.cs" />
+    <Compile Include="Capas\BLL\BLLUsuario.cs" />
     <Compile Include="Capas\DAL\DALCliente.cs" />
     <Compile Include="Capas\DAL\DALProvincia.cs" />
+    <Compile Include="Capas\DAL\DALUsuario.cs" />
     <Compile Include="Capas\Entities\Banco.cs" />
     <Compile Include="Capas\Entities\Catalogos\Marca.cs" />
     <Compile Include="Capas\Entities\Catalogos\MetodoPago.cs" />
@@ -123,8 +125,10 @@
     <Compile Include="Extensiones\ExceptionsExtention.cs" />
     <Compile Include="Interfaces\IBLLCliente.cs" />
     <Compile Include="Interfaces\IBLLProvincia.cs" />
+    <Compile Include="Interfaces\IBLLUsuario.cs" />
     <Compile Include="Interfaces\IDALCliente.cs" />
     <Compile Include="Interfaces\IDALProvincia.cs" />
+    <Compile Include="Interfaces\IDALUsuario.cs" />
     <Compile Include="Persistencia\DataBase.cs" />
     <Compile Include="Persistencia\FactoryConexion.cs" />
     <Compile Include="Persistencia\FactoryDataBase.cs" />

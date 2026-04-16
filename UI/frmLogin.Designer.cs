@@ -28,13 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.epError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -45,7 +51,7 @@
             this.label1.ForeColor = System.Drawing.Color.ForestGreen;
             this.label1.Location = new System.Drawing.Point(139, 205);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 20);
+            this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "USUARIO";
             // 
@@ -57,23 +63,23 @@
             this.label2.ForeColor = System.Drawing.Color.ForestGreen;
             this.label2.Location = new System.Drawing.Point(126, 288);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 20);
+            this.label2.Size = new System.Drawing.Size(111, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "CONTRASEÑA";
             // 
-            // textBox1
+            // txtLogin
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 238);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtLogin.Location = new System.Drawing.Point(95, 238);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(164, 22);
+            this.txtLogin.TabIndex = 2;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(95, 331);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 22);
-            this.textBox2.TabIndex = 3;
+            this.txtPassword.Location = new System.Drawing.Point(95, 331);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(164, 22);
+            this.txtPassword.TabIndex = 3;
             // 
             // btnAceptar
             // 
@@ -85,6 +91,7 @@
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "ACEPTAR";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnSalir
             // 
@@ -96,6 +103,28 @@
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 492);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(359, 26);
+            this.statusStrip1.TabIndex = 6;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(119, 20);
+            this.toolStripStatusLabel1.Text = "toolStripPbBarra";
+            // 
+            // epError
+            // 
+            this.epError.ContainerControl = this;
             // 
             // frmLogin
             // 
@@ -104,15 +133,20 @@
             this.BackgroundImage = global::Nexora.Properties.Resources.login_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(359, 518);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,9 +156,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ErrorProvider epError;
     }
 }
