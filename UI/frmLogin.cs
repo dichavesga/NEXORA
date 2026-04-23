@@ -15,6 +15,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Utilitarios;
 
 namespace Nexora.UI
 {
@@ -26,6 +27,10 @@ namespace Nexora.UI
         public frmLogin()
         {
             InitializeComponent();
+            string pass = Cryptography.EncrypthAES("vend123");
+            Clipboard.SetText(pass);
+
+            MessageBox.Show("Contraseña copiada al portapapeles");
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -50,6 +55,7 @@ namespace Nexora.UI
                     this.txtPassword.Focus();
                     return;
                 }
+
                 //Crea la Instancia con los datos de usuario y contraseña
                 //Guarda todos los datos del usuario tales como usuario, rol, contraseña, nombre y estado
                 oUsuario = bllUsuario.Login(this.txtLogin.Text.Trim(),
