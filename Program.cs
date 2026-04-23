@@ -17,7 +17,12 @@ namespace Nexora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmInicio());
+            frmLogin login = new frmLogin();
+
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new frmInicio());
+            }
 
         }
     }

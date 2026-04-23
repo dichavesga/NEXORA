@@ -17,9 +17,9 @@ namespace Nexora.Capas.BLL
             IDALUsuario dalUsuario = new DALUsuario();
 
             // Encriptar la contraseña antes de enviarla al DAL
-            string cryptPasswd = Cryptography.EncrypthAES(pPassword);
+            //string cryptPasswd = Cryptography.EncrypthAES(pPassword);
 
-            Usuario usuario = dalUsuario.Login(pLogin, cryptPasswd);
+            Usuario usuario = dalUsuario.Login(pLogin, pPassword);
 
             // Validación adicional (opcional pero recomendada)
             if (usuario != null && usuario.Estado == true)

@@ -52,8 +52,8 @@ namespace Nexora.UI
                 }
                 //Crea la Instancia con los datos de usuario y contraseña
                 //Guarda todos los datos del usuario tales como usuario, rol, contraseña, nombre y estado
-                oUsuario = bllUsuario.Login(this.txtLogin.Text,
-                                           this.txtPassword.Text);
+                oUsuario = bllUsuario.Login(this.txtLogin.Text.Trim(),
+                                           this.txtPassword.Text.Trim());
                 if (oUsuario == null)
                 {
                     ++contador;
@@ -74,8 +74,9 @@ namespace Nexora.UI
                     Settings.Default.Login = this.txtLogin.Text.Trim();
                     Settings.Default.Nombre = oUsuario.Nombre;
                     Settings.Default.RolId = oUsuario.IdPerfil.ToString();
+                    Settings.Default.Save();
                     //EfectoConexionNoAsync();
-                    
+
                     // Log de errores
                     _myLogControlEventos.InfoFormat("Accedió a la aplicación :{0}", Settings.Default.Nombre);
                     this.DialogResult = DialogResult.OK;
