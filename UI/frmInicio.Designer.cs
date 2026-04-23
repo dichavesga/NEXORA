@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.mspMenuPrincipal = new System.Windows.Forms.MenuStrip();
-            this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemMantenimientos = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoDispositivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemProcesos = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItemReportes = new System.Windows.Forms.ToolStripMenuItem();
             this.administracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
             this.sttBarraInferior = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.mspMenuPrincipal.SuspendLayout();
@@ -49,29 +49,29 @@
             // 
             this.mspMenuPrincipal.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mspMenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenimientosToolStripMenuItem,
-            this.procesosToolStripMenuItem,
-            this.reportesToolStripMenuItem,
+            this.toolStripMenuItemMantenimientos,
+            this.toolStripMenuItemProcesos,
+            this.reportesToolStripMenuItemReportes,
             this.administracionToolStripMenuItem,
-            this.acercaDeToolStripMenuItem});
+            this.toolStripMenuItemAcercaDe});
             this.mspMenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mspMenuPrincipal.Name = "mspMenuPrincipal";
             this.mspMenuPrincipal.Size = new System.Drawing.Size(934, 72);
             this.mspMenuPrincipal.TabIndex = 0;
             this.mspMenuPrincipal.Text = "menuStrip1";
             // 
-            // mantenimientosToolStripMenuItem
+            // toolStripMenuItemMantenimientos
             // 
-            this.mantenimientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemMantenimientos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
             this.productosToolStripMenuItem,
             this.marcaToolStripMenuItem,
             this.tipoDispositivoToolStripMenuItem});
-            this.mantenimientosToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_tools_64;
-            this.mantenimientosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(194, 68);
-            this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
+            this.toolStripMenuItemMantenimientos.Image = global::Nexora.Properties.Resources.icons8_tools_64;
+            this.toolStripMenuItemMantenimientos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItemMantenimientos.Name = "toolStripMenuItemMantenimientos";
+            this.toolStripMenuItemMantenimientos.Size = new System.Drawing.Size(194, 68);
+            this.toolStripMenuItemMantenimientos.Text = "Mantenimientos";
             // 
             // clientesToolStripMenuItem
             // 
@@ -109,21 +109,21 @@
             this.tipoDispositivoToolStripMenuItem.Text = "Tipo Dispositivo";
             this.tipoDispositivoToolStripMenuItem.Click += new System.EventHandler(this.tipoDispositivoToolStripMenuItem_Click);
             // 
-            // procesosToolStripMenuItem
+            // toolStripMenuItemProcesos
             // 
-            this.procesosToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_process_64;
-            this.procesosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(145, 68);
-            this.procesosToolStripMenuItem.Text = "Procesos";
+            this.toolStripMenuItemProcesos.Image = global::Nexora.Properties.Resources.icons8_process_64;
+            this.toolStripMenuItemProcesos.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItemProcesos.Name = "toolStripMenuItemProcesos";
+            this.toolStripMenuItemProcesos.Size = new System.Drawing.Size(145, 68);
+            this.toolStripMenuItemProcesos.Text = "Procesos";
             // 
-            // reportesToolStripMenuItem
+            // reportesToolStripMenuItemReportes
             // 
-            this.reportesToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_report_64;
-            this.reportesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(146, 68);
-            this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItemReportes.Image = global::Nexora.Properties.Resources.icons8_report_64;
+            this.reportesToolStripMenuItemReportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.reportesToolStripMenuItemReportes.Name = "reportesToolStripMenuItemReportes";
+            this.reportesToolStripMenuItemReportes.Size = new System.Drawing.Size(146, 68);
+            this.reportesToolStripMenuItemReportes.Text = "Reportes";
             // 
             // administracionToolStripMenuItem
             // 
@@ -133,13 +133,13 @@
             this.administracionToolStripMenuItem.Size = new System.Drawing.Size(187, 68);
             this.administracionToolStripMenuItem.Text = "Administracion";
             // 
-            // acercaDeToolStripMenuItem
+            // toolStripMenuItemAcercaDe
             // 
-            this.acercaDeToolStripMenuItem.Image = global::Nexora.Properties.Resources.icons8_info_50;
-            this.acercaDeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(137, 68);
-            this.acercaDeToolStripMenuItem.Text = "AcercaDe";
+            this.toolStripMenuItemAcercaDe.Image = global::Nexora.Properties.Resources.icons8_info_50;
+            this.toolStripMenuItemAcercaDe.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItemAcercaDe.Name = "toolStripMenuItemAcercaDe";
+            this.toolStripMenuItemAcercaDe.Size = new System.Drawing.Size(137, 68);
+            this.toolStripMenuItemAcercaDe.Text = "AcercaDe";
             // 
             // sttBarraInferior
             // 
@@ -186,13 +186,13 @@
 
         private System.Windows.Forms.MenuStrip mspMenuPrincipal;
         private System.Windows.Forms.StatusStrip sttBarraInferior;
-        private System.Windows.Forms.ToolStripMenuItem mantenimientosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemMantenimientos;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem procesosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemProcesos;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItemReportes;
         private System.Windows.Forms.ToolStripMenuItem administracionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemAcercaDe;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripMenuItem marcaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoDispositivoToolStripMenuItem;
