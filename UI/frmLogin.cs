@@ -26,6 +26,7 @@ namespace Nexora.UI
 
         public frmLogin()
         {
+            //Cambio del profe
             InitializeComponent();
             string pass = Cryptography.EncrypthAES("vend123");
             Clipboard.SetText(pass);
